@@ -1,13 +1,12 @@
 {
   "name": "genpark-agent-semantic-cache-query-matcher-skill",
-  "version": "1.0.0",
-  "description": "Fast semantic query cache with fuzzy term similarity and canonical intent hashing to avoid duplicate LLM invocations",
+  "version": "2.0.0",
+  "description": "In-memory sub-millisecond semantic query cache with cosine token similarity, TTL expiry, and hit-rate telemetry",
+  "author": "GenPark AI Engineering",
+  "license": "MIT",
+  "keywords": ["semantic-cache", "query-matcher", "cosine-similarity", "mcp", "agent-skills"],
   "mcp": {
-    "server": "mcp_server.py",
-    "tools": [
-      "cache_set",
-      "cache_get",
-      "cache_stats"
-    ]
+    "supported": true,
+    "entrypoint": "mcp_server.py"
   }
 }
